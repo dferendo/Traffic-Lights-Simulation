@@ -24,3 +24,22 @@ The exponentially distributed inter-arrival time therefore has to be modulated (
 Gaussian probability density function depending on the time of day.
 
 ## Design
+
+The simulation will be having a single server with a queue of unlimited capacity and
+unlimited population. This decision was taken since only one car can exit the T-junction at a
+time and the road (queue) can have unlimited cars waiting. Road A and Road B will both be
+split into separate simulation since they are essentially doing the same time except that the
+Gaussian parameters and whether the initial traffic light is red or green are different. The
+following shows the system diagram:
+
+![Image](images/system-diagram.png?raw=true "T-Junction")
+
+
+## Output
+
+The script outputs all the cars that passed through the lights with their respective time.
+Also it outputs 2 plots that shows the queue length against the time for both roads and for both simulations.
+
+## License
+
+This project is licensed under MIT.
